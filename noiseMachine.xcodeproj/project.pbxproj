@@ -13,6 +13,8 @@
 		43C57F8F214011F800182ABC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43C57F8E214011F800182ABC /* Assets.xcassets */; };
 		43C57F92214011F800182ABC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43C57F90214011F800182ABC /* LaunchScreen.storyboard */; };
 		43C57F9A214016BA00182ABC /* glassBreaking.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 43C57F99214016BA00182ABC /* glassBreaking.mp3 */; };
+		43C57F9C21404BF400182ABC /* clang.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 43C57F9B21404BF400182ABC /* clang.mp3 */; };
+		43C57F9E21404F2400182ABC /* ButtonEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C57F9D21404F2400182ABC /* ButtonEffects.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		43C57F91214011F800182ABC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43C57F93214011F800182ABC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43C57F99214016BA00182ABC /* glassBreaking.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = glassBreaking.mp3; path = ../../../SoundEffects/glassBreaking.mp3; sourceTree = "<group>"; };
+		43C57F9B21404BF400182ABC /* clang.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = clang.mp3; path = ../../../../Downloads/clang.mp3; sourceTree = "<group>"; };
+		43C57F9D21404F2400182ABC /* ButtonEffects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonEffects.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,7 @@
 		43C57F7B214011F700182ABC = {
 			isa = PBXGroup;
 			children = (
+				43C57F9B21404BF400182ABC /* clang.mp3 */,
 				43C57F99214016BA00182ABC /* glassBreaking.mp3 */,
 				43C57F86214011F700182ABC /* noiseMachine */,
 				43C57F85214011F700182ABC /* Products */,
@@ -63,6 +68,7 @@
 				43C57F8E214011F800182ABC /* Assets.xcassets */,
 				43C57F90214011F800182ABC /* LaunchScreen.storyboard */,
 				43C57F93214011F800182ABC /* Info.plist */,
+				43C57F9D21404F2400182ABC /* ButtonEffects.swift */,
 			);
 			path = noiseMachine;
 			sourceTree = "<group>";
@@ -125,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43C57F9C21404BF400182ABC /* clang.mp3 in Resources */,
 				43C57F9A214016BA00182ABC /* glassBreaking.mp3 in Resources */,
 				43C57F92214011F800182ABC /* LaunchScreen.storyboard in Resources */,
 				43C57F8F214011F800182ABC /* Assets.xcassets in Resources */,
@@ -139,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43C57F9E21404F2400182ABC /* ButtonEffects.swift in Sources */,
 				43C57F8A214011F700182ABC /* ViewController.swift in Sources */,
 				43C57F88214011F700182ABC /* AppDelegate.swift in Sources */,
 			);

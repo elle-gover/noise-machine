@@ -18,15 +18,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zoj-z3-F7u">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yf8-4P-hdP">
                                 <rect key="frame" x="128" y="304" width="118" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.3555961395813787" green="0.0" blue="0.76459277849740936" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Sound!">
-                                    <color key="titleColor" red="0.98344849100259057" green="1" blue="0.98697505409724573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.35559613960000003" green="0.0" blue="0.76459277849999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="21"/>
+                                <state key="normal" title="Glass">
+                                    <color key="titleColor" red="0.98344849099999998" green="1" blue="0.98697505409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="glassButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZiS-oz-PC6"/>
+                                    <action selector="glassButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qke-Py-AVh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvR-Oo-0a5">
+                                <rect key="frame" x="128" y="384" width="118" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.29344209605394822" blue="0.16648729096394621" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="21"/>
+                                <state key="normal" title="Clang">
+                                    <color key="titleColor" red="0.97664824889480162" green="1" blue="0.9993630510043281" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clangButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PAw-ty-tAc"/>
                                 </connections>
                             </button>
                         </subviews>

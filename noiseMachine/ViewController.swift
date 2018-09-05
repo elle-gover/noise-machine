@@ -11,7 +11,11 @@ import AVFoundation
 
 class ViewController: UIViewController {
 
-    var audioPlayer: AVAudioPlayer?
+    var glassPlayer: AVAudioPlayer?
+    var clangPlayer: AVAudioPlayer?
+    var knifePlayer: AVAudioPlayer?
+    var boingPlayer: AVAudioPlayer?
+    var howdyPlayer: AVAudioPlayer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,14 +34,14 @@ class ViewController: UIViewController {
             try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
             try AVAudioSession.sharedInstance().setActive(true)
             
-            audioPlayer = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+            glassPlayer = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
             
-            guard let player = audioPlayer else { return }
+            guard let player = glassPlayer else { return }
             
             player.play()
             
-        } catch let error {
-            print("There is an error.")
+        } catch {
+            print("There is no sound here.")
         }
     }
     
@@ -49,33 +53,108 @@ class ViewController: UIViewController {
             try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
             try AVAudioSession.sharedInstance().setActive(true)
             
-            audioPlayer = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+            clangPlayer = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
             
-            guard let player = audioPlayer else { return }
+            guard let player = clangPlayer else { return }
             
             player.play()
             
-        } catch let error {
-            print("There is an error.")
+        } catch {
+            print("There is no sound here.")
+        }
+    }
+    
+    func knifeSound() {
+        guard let url = Bundle.main.url(forResource: "knife", withExtension: "m4a") else { return }
+        
+        do {
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+            try AVAudioSession.sharedInstance().setActive(true)
+            
+            knifePlayer = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+            
+            guard let player = knifePlayer else { return }
+            
+            player.play()
+            
+        } catch {
+            print("There is no sound here.")
+        }
+    }
+    
+    func boingSound() {
+        guard let url = Bundle.main.url(forResource: "boing", withExtension: "m4a") else { return }
+        
+        do {
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+            try AVAudioSession.sharedInstance().setActive(true)
+            
+            boingPlayer = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+            
+            guard let player = boingPlayer else { return }
+            
+            player.play()
+            
+        } catch {
+            print("There is no sound here.")
+        }
+    }
+    
+    func howdySound() {
+        guard let url = Bundle.main.url(forResource: "howdy", withExtension: "m4a") else { return }
+        
+        do {
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+            try AVAudioSession.sharedInstance().setActive(true)
+            
+            howdyPlayer = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+            
+            guard let player = howdyPlayer else { return }
+            
+            player.play()
+            
+        } catch {
+            print("There is no sound here.")
         }
     }
     
     
     
-    
     @IBAction func clangButton(_ sender: UIButton) {
+        
         clangSound()
+        sender.pulsate()
+      
     }
-    
-    
     
     @IBAction func glassButton(_ sender: UIButton) {
         
-       glassSound()
+        glassSound()
+        sender.pulsate()
+      
+    }
+    
+    @IBAction func knifeButton(_ sender: UIButton) {
+        
+        knifeSound()
+        sender.pulsate()
         
     }
     
-
-
+    @IBAction func boingButton(_ sender: UIButton) {
+        
+        boingSound()
+        sender.pulsate()
+        
+    }
+    
+    
+    @IBAction func howdyButton(_ sender: UIButton) {
+        
+        howdySound()
+        sender.pulsate()
+        
+    }
+    
 }
 

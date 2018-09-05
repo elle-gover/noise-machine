@@ -15,6 +15,9 @@
 		43C57F9A214016BA00182ABC /* glassBreaking.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 43C57F99214016BA00182ABC /* glassBreaking.mp3 */; };
 		43C57F9C21404BF400182ABC /* clang.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 43C57F9B21404BF400182ABC /* clang.mp3 */; };
 		43C57F9E21404F2400182ABC /* ButtonEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C57F9D21404F2400182ABC /* ButtonEffects.swift */; };
+		43C57FA02140607700182ABC /* knife.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 43C57F9F2140607700182ABC /* knife.m4a */; };
+		43C57FA22140608E00182ABC /* boing.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 43C57FA12140608E00182ABC /* boing.m4a */; };
+		43C57FA4214066E700182ABC /* howdy.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 43C57FA3214066E700182ABC /* howdy.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		43C57F99214016BA00182ABC /* glassBreaking.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = glassBreaking.mp3; path = ../../../SoundEffects/glassBreaking.mp3; sourceTree = "<group>"; };
 		43C57F9B21404BF400182ABC /* clang.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = clang.mp3; path = ../../../../Downloads/clang.mp3; sourceTree = "<group>"; };
 		43C57F9D21404F2400182ABC /* ButtonEffects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonEffects.swift; sourceTree = "<group>"; };
+		43C57F9F2140607700182ABC /* knife.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = knife.m4a; path = ../../../../Downloads/knife.m4a; sourceTree = "<group>"; };
+		43C57FA12140608E00182ABC /* boing.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = boing.m4a; path = ../../../../Downloads/boing.m4a; sourceTree = "<group>"; };
+		43C57FA3214066E700182ABC /* howdy.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = howdy.m4a; path = ../../../../Downloads/howdy.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +50,9 @@
 		43C57F7B214011F700182ABC = {
 			isa = PBXGroup;
 			children = (
+				43C57FA3214066E700182ABC /* howdy.m4a */,
+				43C57FA12140608E00182ABC /* boing.m4a */,
+				43C57F9F2140607700182ABC /* knife.m4a */,
 				43C57F9B21404BF400182ABC /* clang.mp3 */,
 				43C57F99214016BA00182ABC /* glassBreaking.mp3 */,
 				43C57F86214011F700182ABC /* noiseMachine */,
@@ -64,11 +73,11 @@
 			children = (
 				43C57F87214011F700182ABC /* AppDelegate.swift */,
 				43C57F89214011F700182ABC /* ViewController.swift */,
+				43C57F9D21404F2400182ABC /* ButtonEffects.swift */,
 				43C57F8B214011F700182ABC /* Main.storyboard */,
 				43C57F8E214011F800182ABC /* Assets.xcassets */,
 				43C57F90214011F800182ABC /* LaunchScreen.storyboard */,
 				43C57F93214011F800182ABC /* Info.plist */,
-				43C57F9D21404F2400182ABC /* ButtonEffects.swift */,
 			);
 			path = noiseMachine;
 			sourceTree = "<group>";
@@ -131,6 +140,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43C57FA4214066E700182ABC /* howdy.m4a in Resources */,
+				43C57FA22140608E00182ABC /* boing.m4a in Resources */,
+				43C57FA02140607700182ABC /* knife.m4a in Resources */,
 				43C57F9C21404BF400182ABC /* clang.mp3 in Resources */,
 				43C57F9A214016BA00182ABC /* glassBreaking.mp3 in Resources */,
 				43C57F92214011F800182ABC /* LaunchScreen.storyboard in Resources */,

@@ -25,13 +25,5 @@ extension UIButton {
         
         layer.add(pulse, forKey: nil)
     }
-    
-    func changeColor() {
-        let colorChange = CASpringAnimation(keyPath: "backgroundColor")
-        colorChange.fromValue = UIColor.cyan
-        colorChange.toValue = UIColor.yellow
-        
-        layer.add(colorChange, forKey: nil)
-    }
   
 }

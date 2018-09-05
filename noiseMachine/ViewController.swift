@@ -11,11 +11,13 @@ import AVFoundation
 
 class ViewController: UIViewController {
 
+    // instances
     var glassPlayer: AVAudioPlayer?
     var clangPlayer: AVAudioPlayer?
     var knifePlayer: AVAudioPlayer?
     var boingPlayer: AVAudioPlayer?
     var howdyPlayer: AVAudioPlayer?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
